@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 
-from parrot import parrot
+import sys
+sys.path.append('./lib')  
+
+from parrot import parrot  
 
 if __name__ == '__main__':
-    import ipdb; ipdb.set_trace()
+    result = parrot("Hello!")
+    print(f"Returned: {result}")
